@@ -10,7 +10,6 @@ After carrying the logger while walking, biking, boating or skiing I would have 
 
 Since my receiver uses a SiRFstarIII chipset I called the program sirf2earth.  It should work with data from any reciever, though, since it only pays attention to standard NMEA sentences, not any manufacturer specific propietary sentences.
 
-The image below is a screen grab of Google Earth.  The blue lines display data from a GPS logger recording.
- 
+The image below is a screen grab of Google Earth.  The blue lines display data from a GPS logger recording.  The files corresponing to this image are in the samples folder.  Take a look at the TXT file to see what the raw GPS data looks like, download the GPX file and open it in Google Earth to get the full experience.
 
 ![gps](https://cloud.githubusercontent.com/assets/318132/26525797/bdbd986c-4330-11e7-8a44-f430d8ed47f6.jpg)
