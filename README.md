@@ -1,6 +1,6 @@
 # NMEAtoGPX
 
-Convert NMEA sentences to a GPX file that can be used in Google Earth.
+Convert NMEA sentences to a GPX file for use in Google Earth.
 
 This code was written in support of a GPS logger I built using an Arduino, a data logging shield that writes to an SD card and a USB host shield for the GSP receiver.
 
