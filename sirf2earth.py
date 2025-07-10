@@ -429,7 +429,7 @@ class GetFileNames:
         root["pady"] = 20
 
         # size and postion window
-        root.geometry("600x150+100-300")
+        root.geometry("700x150+100-300")
 
         #Create a Label in textFrame
         inFileLabel = Label(root, text="NMEA file").grid(row=0, sticky=W)
@@ -455,6 +455,7 @@ class GetFileNames:
         self.goButton = Button(root, text="GO", command=self.go, state=DISABLED)
         self.goButton.grid(row=2, column=2, sticky=W)
 
+        root.focus_force()
         root.mainloop()
 
  # create getfilenames object
