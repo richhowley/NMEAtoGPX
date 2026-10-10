@@ -2,10 +2,12 @@
 # sirf2earth
 #
 
-# Convert text file with NMEA messages to a GPX file for use in Google Earch
+# Convert text file with NMEA messages to a GPX file for use in Google Earth
 # Tested with reciever that uses a SiRFstarIII chipset.
 #
 # command line:  python3 sirf2earth.py
+#
+# build executable: pyinstaller --onefile --noconsole sirf2earth.py
 #
 # The program will prompt for an input file and let you specify an output file name.
 # Open the file in Google Earth.
@@ -254,7 +256,7 @@ class GPXMaker:
         # if checksum and data are both valid
         if( (self.passesChecksum(NMEAsentence)) and (NMEAsentence[6] != '0') ):
 
-            # print latitude and longitude
+            # format latitude and longitude
             pos = {'mLatitude':NMEAsentence[2],'nsIndicator':NMEAsentence[3],'ewInidcator':NMEAsentence[5],'mLongitude':NMEAsentence[4]}
             self.latlonStr(pos)
 
